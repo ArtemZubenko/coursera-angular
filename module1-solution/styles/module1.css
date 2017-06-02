@@ -1,0 +1,9 @@
+.message-success {
+    color: green;
+    border: solid green;
+}
+
+.message-error {
+    color: red;
+    border: solid red;
+}

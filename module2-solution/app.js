@@ -42,7 +42,7 @@
 
         // Remove item from buyItems array and add it to alreadyBoughtItems array
         service.addItem = function (itemIndex) {
-            var item = buyItems.pop(itemIndex);
+            var item = buyItems.splice(itemIndex, 1);
             alreadyBoughtItems.push(item);
         }
 

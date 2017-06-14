@@ -15,10 +15,7 @@
                 items: '<foundItems',
                 onRemove: '&',
                 emptyMessage: '@emptyMessage'
-            },
-            controller: FoundItemsController,
-            controllerAs: 'list',
-            bindToController: true
+            }
         }
         return ddo;
     }

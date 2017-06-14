@@ -1,12 +1,13 @@
 <div class="directive-container">
-    <div class="alert-info" ng-if="list.items == ''">{{list.emptyMessage}}</div>
+    <div class="alert-info" ng-if="items == ''">{{list.emptyMessage}}</div>
     <div>
         <ul>
-            <li ng-repeat=" item in list.items">
+            <li ng-repeat=" item in items">
                 {{item.name.trim()}}, {{item.short_name.trim()}}, {{item.description.trim()}}
-                <button ng-click="list.onRemove({index: $index});">Don't want this one!</button>
+                <button ng-click="onRemove({index: $index});">Don't want this one!</button>
             </li>
         </ul>
     </div>
 </div>
+
 

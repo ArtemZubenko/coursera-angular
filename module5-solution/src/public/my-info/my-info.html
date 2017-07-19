@@ -1,0 +1,30 @@
+<div class="container">
+
+    <span ng-if="!myInfoController.info">Not Signed Up Yet. <a ui-sref="public.signin">Sign up Now!</a></span>
+
+    <div ng-if="myInfoController.info">
+        <h2>Your registered details</h2>
+
+        Your name: {{myInfoController.info.firstName + ' ' + myInfoController.info.lastName}}<br/>
+        Your email: {{myInfoController.info.emailAddress}}<br/>
+        Your phone number: {{myInfoController.info.phoneNumber}}<br/><br/>
+
+
+        <div ng-if="myInfoController.dish">
+            Your favorite menu item: <br/>
+
+            <h3>{{myInfoController.dish.name}}</h3>
+
+            {{myInfoController.dish.description}}
+            <div/>
+
+            <img class="img-responsive"
+                 ng-src="{{myInfoController.basePath}}/images/{{myInfoController.dish.short_name}}.jpg"
+                 alt="{{myInfoController.dish.name}}">
+
+        </div>
+
+    </div>
+
+
+</div>
